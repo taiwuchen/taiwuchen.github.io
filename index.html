@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="logo slide-in-left">Taiwu's Portfolio</h1>
+            <button class="menu-toggle">☰</button>
+            <nav class="slide-in-right">
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#awards" class="nav-link">Awards</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    
+    <main>
+        <section id="home">
+            <div class="profile-container">
+                <div class="profile-picture flip-in">
+                    <img src="assets/profile_picture.png" alt="Profile Picture">
+                </div>
+                <div class="profile-info">
+
+                    <h2 class="fade-in-top delay-50">Taiwu Chen</h2>
+                    <p class="slide-in-right delay-400">Software Engineering Student</p>
+                    <p class="slide-in-right delay-700">at University of Calgary</p>
+                    <div class="cta-buttons slide-in-bottom delay-600">
+                        <a href="assets/resume.pdf" class="custom-button" target="_blank" download>Download CV</a>
+                        <button class="custom-button dark" onclick="scrollToSection('contact')">Contact Info</button>
+                    </div>
+                    <div class="social-links scale-in delay-700">
+                        <a href="https://www.linkedin.com/in/taiwu-chen-766519245/" target="_blank" class="social-icon">
+                            <img src="assets/linkedin-icon.png" alt="LinkedIn">
+                        </a>
+                        <a href="https://github.com/taiwuchen" target="_blank" class="social-icon">
+                            <img src="assets/github-icon.png" alt="GitHub">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about" class="about-section">
+            <div class="about-header">
+                <h2 class="section-title slide-in-top delay-50">More About Me</h2>
+                <p class="section-subtitle slide-in-right delay-50">Skilled in designing and implementing innovative features.<br> Proactive problem-solver and effective communicator.</p>
+                
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="slide-in-right delay-100">Programming Language</h2>
+                    <div class="skills-grid slide-in-right delay-150">
+                        <div class="skill-item">
+                            <img src="assets/python.webp" alt="Python" class="skill-icon">
+                            <span class="skill-name"><b>Python</b></span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/c++.png" alt="C/C++" class="skill-icon">
+                            <span class="skill-name"><b>C/C++</b></span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/html.ico" alt="HTML/CSS" class="skill-icon">
+                            <span class="skill-name"><b>HTML/CSS</b></span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/js.webp" alt="JavaScript" class="skill-icon">
+                            <span class="skill-name"><b>JavaScript</b></span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/java.png" alt="Java" class="skill-icon">
+                            <span class="skill-name"><b>Java</b></span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/sql.png" alt="SQL" class="skill-icon">
+                            <span class="skill-name"><b>SQL</b></span>
+                        </div>
+                    </div>
+                    
+                    
+                    <h2 class="slide-in-right delay-200">Software</h2>
+                    <div class="skills-grid slide-in-right delay-250">
+                        <div class="skill-item">
+                            <img src="assets/git.png" alt="Git" class="skill-icon">
+                            <span class="skill-name"><b>Git</b></span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/drawio.jpg" alt="Draw.io" class="skill-icon">
+                            <span class="skill-name"><b>Draw.io</b></span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/excel.webp" alt="Excel" class="skill-icon">
+                            <span class="skill-name"><b>Excel</b></span>
+                        </div>
+                    </div>
+
+                    
+                    <h2 class="slide-in-right delay-300">Other</h2>
+                    <div class="skills-grid slide-in-right delay-350">
+                        
+                        <div class="skill-item">
+                            <img src="assets/leadership.png" alt="leadership" class="skill-icon">
+                            <span class="skill-name"><b>Leadership</b></span>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <img src="assets/problem_solving.jpg" alt="problem_solving" class="skill-icon">
+                            <span class="skill-name"><b>Problem Solving</b></span>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <img src="assets/communication.svg" alt="communication" class="skill-icon">
+                            <span class="skill-name"><b>Communication</b></span>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <img src="assets/teamwork.jpg" alt="teamwork" class="skill-icon">
+                            <span class="skill-name"><b>Teamwork</b></span>
+                        </div>
+                        
+                        
+                        <div class="skill-item">
+                            <img src="assets/professionalism.png" alt="professionalism" class="skill-icon">
+                            <span class="skill-name"><b>Professionalism</b></span>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <img src="assets/more.png" alt="more" class="skill-icon">
+                            <span class="skill-name"><b>And More</b></span>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                
+                <!--
+                <div class="about-picture slide-in-left delay-500">
+                    <img src="assets/mypic1.jpg" alt="Taiwu Chen">
+                </div>
+                -->
+                
+            </div>
+        </section>
+
+        
+        <section id="experience">
+            <h3 class="section-subtitle zoom-out">Professional</h3>
+            <h2 class="section-title zoom-out">Experience</h2>
+            
+            <div class="experience-container">
+                
+                <div class="zoom-out">
+                    <div class="experience-card">
+                        <div class="experience-logo">
+                            <img src="assets/hosiptal.jpg" alt="hosiptal Logo">
+                        </div>
+                        
+                        <div class="experience-content">
+                            <h3 class="experience-title">Database Administrator</h3>
+                            <h4 class="company">Tongdao First People's Hospital</h4>
+                            <p class="date">August, 2024</p>
+                            <p class="experience-description">Generated reports from database queries</p>
+                            <button class="custom-button learn-more">Learn More</button>
+                            
+                            
+                            <div class="additional-description hidden">
+                                <p>During my internship as a Database Administrator, I supported various departments by extracting specific patient data. I ensured data accuracy and confidentiality while managing database requests efficiently.</p>
+                            </div>
+                            <a href="assets/intern_dm.pdf" class="custom-button dark" target="_blank" download>Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="zoom-out">
+                    <div class="experience-card">
+                        <div class="experience-logo">
+                            <img src="assets/tongdaorongmei.png" alt="tongdaorongmei Logo">
+                        </div>
+                        
+                        <div class="experience-content">
+                            <h3 class="experience-title">Full Stack Developer</h3>
+                            <h4 class="company">Tongdao Converging Media</h4>
+                            <p class="date">July, 2024</p>
+                            <p class="experience-description">Worked on a local news website</p>
+                            <button class="custom-button learn-more">Learn More</button>
+                            
+                            
+                            <div class="additional-description hidden">
+                                <p>As a Full Stack Developer, I enhanced the user experience by implementing a calendar feature, allowing users to select videos by date. Collaborating with the team, I utilized SSCMS from SiteServer to update the website's functionality, ensuring seamless integration and improved site performance.</p>
+                            </div>
+                            <a href="assets/intern_fs.pdf" class="custom-button dark" target="_blank" download>Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="zoom-out">
+                    <div class="experience-card">
+                        <div class="experience-logo">
+                            <img src="assets/asdan.png" alt="ASDAN Logo">
+                        </div>
+                        
+                        <div class="experience-content">
+                            <h3 class="experience-title">Teaching Assistant in Semporna, Malaysia</h3>
+                            <h4 class="company">ASDAN</h4>
+                            <p class="date">December 2019</p>
+                            <p class="experience-description">Taught in primary school as a temporary teacher</p>
+                            <button class="custom-button learn-more">Learn More</button>
+                            
+                            
+                            <div class="additional-description hidden">
+                                <p>Teaching in Semporna, Malaysia, is a rewarding experience. We guide children through mathematics, geography, art, handwork, and physical education. The diverse curriculum fosters creativity, critical thinking, and physical well-being, enriching students' lives in this picturesque coastal town. Embracing local culture and community, we shape future generations with dedication and care.</p>
+                            </div>
+                            <a href="assets/malaysia.jpeg" class="custom-button dark" target="_blank" download>Certificate</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="zoom-out">
+                    <div class="experience-card">
+                        <div class="experience-logo">
+                            <img src="assets/asdan.png" alt="ASDAN Logo">
+                        </div>
+                        
+                        <div class="experience-content">
+                            <h3 class="experience-title">Teaching Assistant in Bali, Indonesia</h3>
+                            <h4 class="company">ASDAN</h4>
+                            <p class="date">July 2019</p>
+                            <p class="experience-description">Taught in primary school as a temporary teacher</p>
+                            <button class="custom-button learn-more">Learn More</button>
+                            
+                            
+                            <div class="additional-description hidden">
+                                <p>Volunteer teaching activities are carried out in Bali, Indonesia. Volunteers prepare courses and activities such as global citizenship, art, business and entrepreneurship, interest courses, and kite flying competitions for local school students to help children in Bali improve their core skills and innovative thinking, let them learn about a more colorful world through our volunteers and become global citizens.</p>
+                            </div>
+                            <a href="assets/bali.png" class="custom-button dark" target="_blank" download>Certificate</a>
+
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        
+        <section id="projects">
+            <h3 class="section-subtitle slide-in-top">Recent</h3>
+            <h2 class="section-title slide-in-top">Projects</h2>
+            
+            <div class="projects-container">
+                
+                
+                <div class="fade-in-bottom">
+                    <div class="projects-card">
+                        <img src="assets/fit.png" alt="Fit" class="projects-img">
+                        <h3 class="projects-title">Fit - AI powered App</h3>
+                        <h5 class="projects-title">Ongoing</h5>
+                        <div class="projects-links">
+                            <button class="custom-button learn-more">Learn More</button>
+                            <div class="additional-description hidden">
+                                <p>For my ongoing project "fit," my team and I are developing an iOS app to help users manage their wardrobe and receive AI-powered outfit suggestions. The app features wardrobe management, weather-based recommendations, and personalized style preferences. Users can add clothing items via camera scanning and receive tailored outfit recommendations based on current weather and personal style choices.</p>
+                            </div>
+                            <a href="https://github.com/taiwuchen/Fit" target="_blank" class="custom-button dark">Github</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fade-in-bottom">
+                    <div class="projects-card">
+                        <img src="assets/house.png" alt="House Energy Estimation System" class="projects-img">
+                        <h3 class="projects-title">House Energy Estimation System</h3>
+                        <h5 class="projects-title">YYC Hackathon 2023</h5>
+                        <div class="projects-links">
+                            <button class="custom-button learn-more">Learn More</button>
+                            <div class="additional-description hidden">
+                                <p>The Accommodation Energy Estimation System is a Python tool that estimates household energy usage based on user-input appliance usage patterns. It calculates approximate electricity and water consumption, providing insights into energy costs and environmental impact. The program serves as an educational tool for increasing energy awareness in residential settings.</p>
+                            </div>
+                            <a href="https://github.com/malikmahdivika/Hackathon2023" target="_blank" class="custom-button dark">Github</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fade-in-bottom">
+                    <div class="projects-card">
+                        <img src="assets/flight.png" alt="Flight Management System" class="projects-img">
+                        <h3 class="projects-title">Flight Management System</h3>
+                        <h5 class="projects-title">ENSF 337</h5>
+                        <div class="projects-links">
+                            <button class="custom-button learn-more">Learn More</button>
+                            <div class="additional-description hidden">
+                                <p>The Flight Management System is a C++ program for managing airline flight information. It offers features like displaying seat maps, managing passenger data, and saving information to files. Users interact with the system through a menu-based interface, allowing them to add or remove passengers and view flight details. The program demonstrates object-oriented programming principles and file handling in C++, making it suitable for small-scale airline management or as an educational tool for learning C++ concepts.</p>
+                            </div>
+                            <a href="https://github.com/jindjeetcheema/Flight-Management-Program-in-C--" target="_blank" class="custom-button dark">Github</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fade-in-bottom">
+                    <div class="projects-card">
+                        <img src="assets/pong.png" alt="Pong (Arduino)" class="projects-img">
+                        <h3 class="projects-title">Pong (Arduino)</h3>
+                        <h5 class="projects-title"></h5>
+                        <div class="projects-links">
+                            <button class="custom-button learn-more">Learn More</button>
+                            <div class="additional-description hidden">
+                                <p>This project serves as a practical application of embedded systems development, combining both hardware and software elements to recreate a classic video game. It likely provided hands-on experience in working with Arduino, understanding input/output operations, and implementing game logic in a resource-constrained environment.</p>
+                            </div>
+                            <a href="https://github.com/uwiat/Pong---updated" target="_blank" class="custom-button dark">Code</a>
+                            <a href="https://www.youtube.com/watch?v=Sd_QIn9NC3Y" target="_blank" class="custom-button">Demo</a>
+                        </div>
+                    </div>
+                </div>
+            
+                
+                <div class="fade-in-bottom">
+                    <div class="projects-card">
+                        <img src="assets/garden.png" alt="Mini Garden" class="projects-img">
+                        <h3 class="projects-title">Mini Garden</h3>
+                        <h5 class="projects-title">  </h5>
+                        <div class="projects-links">
+                            <button class="custom-button learn-more">Learn More</button>
+                            <div class="additional-description hidden">
+                                <p>My team and I designed and built a self-sustaining, automated indoor garden using Arduino technology. The project emphasized the design process, including problem definition, ideation, prototyping, and evaluation. We managed soil moisture and lighting through sensors, ensuring a robust, waterproof enclosure. The project utilized recycled materials and included workshops and design reviews. We documented our progress in logbooks and presented our final product and pitch to demonstrate technical and entrepreneurial insights.</p>
+                            </div>
+                            <a href="assets/garden.pdf" target="_blank" class="custom-button dark" download>Demo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fade-in-bottom">
+                    <div class="projects-card">
+                        <img src="assets/sail_car.png" alt="Sail Car" class="projects-img">
+                        <h3 class="projects-title">Sail Car</h3>
+                        <h5 class="projects-title">  </h5>
+                        <div class="projects-links">
+                            <button class="custom-button learn-more">Learn More</button>
+                            <div class="additional-description hidden">
+                                <p>Designing a wind-powered "Sail Car" to carry 100 marbles across 150 cm. My team and I have just two hours to brainstorm, build, and test our creation using a limited selection of materials and a tight budget. We need to document our design process, manage resources carefully, and present our solution. It's a race against time to create a functional Sail Car that meets all the requirements. We're determined to rise to the challenge and make our design work, putting our engineering skills to the test in this hands-on project.</p>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=636xM0J5N8I" target="_blank" class="custom-button dark">Demo</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        <section id="awards">
+            <h3 class="section-subtitle">Honors</h3>
+            <h2 class="section-subtitle">&</h2>
+            <h2 class="section-title">Awards</h2>
+
+            <div class="awards-container">
+                
+                <div class="rotate-in">
+                    <div class="awards-card">
+                        <div class="awards-logo">
+                            <img src="assets/badge-cc423be65f43b4cde639705d5d361c71.png" alt="Award Logo">
+                        </div>
+                        <div class="awards-content">
+                            <h4 class="awards-title">Engineering Practicum Program</h4>
+                            <p class="organization">ECC, Schulich School of Engineering</p>
+                            <p class="date">2024</p>
+                            <a href="assets/ucalgary-badges-cc423be65f43b4cde639705d5d361c71.pdf" class="custom-button" target="_blank" download>View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="rotate-in">
+                    <div class="awards-card">
+                        <div class="awards-logo">
+                            <img src="assets/badge-9d844af30caac3aab58e6805fc69d95b.png" alt="Award Logo">
+                        </div>
+                        <div class="awards-content">
+                            <h4 class="awards-title">Engineering
+                                Entrepreneurship</h4>
+                            <p class="organization">ECC, Schulich School of Engineering</p>
+                            <p class="date">2023</p>
+                            <a href="assets/ucalgary-badges-9d844af30caac3aab58e6805fc69d95b.pdf" class="custom-button" target="_blank" download>View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="rotate-in">
+                    <div class="awards-card">
+                        <div class="awards-logo">
+                            <img src="assets/acsl_logo.png" alt="Award Logo">
+                        </div>
+                        <div class="awards-content">
+                            <h4 class="awards-title">American Computer Science League Final</h4>
+                            <p class="organization">ACSL</p>
+                            <p class="date">2020 - 2021</p>
+                            <a href="assets/acsl.jpeg" class="custom-button" target="_blank" download>View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="rotate-in">
+                    <div class="awards-card">
+                        <div class="awards-logo">
+                            <img src="assets/bpho_logo.jpeg" alt="Award Logo">
+                        </div>
+                        <div class="awards-content">
+                            <h4 class="awards-title">British Physics Olympiad Bronze</h4>
+                            <p class="organization">BPhO</p>
+                            <p class="date">2019 - 2020</p>
+                            <a href="assets/bpho.jpeg" class="custom-button" target="_blank" download>View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="rotate-in">
+                    <div class="awards-card">
+                        <div class="awards-logo">
+                            <img src="assets/kangaroo_logo.png" alt="Award Logo">
+                        </div>
+                        <div class="awards-content">
+                            <h4 class="awards-title">Math Kangaroo China</h4>
+                            <p class="organization">ASDAN</p>
+                            <p class="date">2019</p>
+                            <a href="assets/mathkangaroo.jpeg" class="custom-button" target="_blank" download>View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="rotate-in">
+                    <div class="awards-card">
+                        <div class="awards-logo">
+                            <img src="assets/amt_logo.png" alt="Award Logo">
+                        </div>
+                        <div class="awards-content">
+                            <h4 class="awards-title"> Australian Mathematics Competition</h4>
+                            <p class="organization">AMT</p>
+                            <p class="date">2019</p>
+                            <a href="assets/amc.jpeg" class="custom-button" target="_blank" download>View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    
+
+        <section id="contact">
+            <h3 class="section-subtitle glitch">Get In Touch</h3>
+            <h2 class="section-title glitch">Contact Me</h2>
+            
+            <div class="contact-container">
+                <div class="glitch">
+                    <button class="contact-button" data-copytext="chen.taiwu@ucalgary.ca">
+                        <img src="assets/email.png" alt="School Email">
+                        <span>chen.taiwu@ucalgary.ca</span>
+                    </button>
+                </div>
+                
+                <div class="glitch">
+                    <button class="contact-button" data-copytext="taiwu.chen@icloud.com">
+                        <img src="assets/email.png" alt="Personal Email">
+                        <span>taiwu.chen@icloud.com</span>
+                    </button>
+                </div>
+                
+                <div class="glitch">
+                    <button class="contact-button" data-copytext="+15879716606">
+                        <img src="assets/phone.png" alt="Phone">
+                        <span>+1 (587) 971-6606</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <nav>
+            <ul class="zoom-out">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="slide-in-bottom">&copy; 2024 Taiwu Chen. All Rights Reserved</p>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

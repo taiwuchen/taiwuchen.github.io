@@ -1,0 +1,227 @@
+/* Universal Box-Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent horizontal scrolling */
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* Hide the menu toggle button by default on larger screens */
+.menu-toggle {
+  display: none;
+}
+
+/* Responsive Styles for Tablets and Mobile Devices */
+@media screen and (max-width: 768px) {
+  /* Adjust body styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    opacity: 0;
+    overflow-x: hidden;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  /* Make body visible once loaded */
+  body.loaded {
+    opacity: 1;
+  }
+
+  /* Adjust main content to take available space */
+  main {
+    flex: 1;
+    padding-top: 80px; /* Ensure content isn't hidden behind the fixed header */
+  }
+
+  /* Center social links on smaller screens */
+  .social-links {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  /* Ensure footer sticks to the bottom */
+  footer {
+    margin-top: auto;
+    padding: 20px;
+  }
+
+  /* Hide footer navigation on smaller screens */
+  footer nav ul {
+    display: none;
+  }
+
+  /* Adjust section titles for readability */
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  /* Resize profile information text */
+  .profile-info h2 {
+    font-size: 36px;
+  }
+
+  .profile-info p {
+    font-size: 16px;
+  }
+
+  /* Stack profile container vertically */
+  .profile-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px; /* Add spacing between items */
+  }
+
+  /* Adjust about content layout */
+  .about-text {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+
+
+  /* Adjust experience and projects containers for vertical layout */
+  .experience-container,
+  .projects-container,
+  .awards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Add spacing between cards */
+  }
+
+  /* Restrict card widths for better mobile viewing */
+  .experience-card,
+  .projects-card,
+  .awards-card {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 10px; /* Add horizontal margin */
+  }
+
+  /* Add padding to skills container */
+  .skills-container {
+    padding: 0 20px;
+  }
+
+  /* Header styles for smaller screens */
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    transition: padding 0.3s ease;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+
+  /* Navigation adjustments */
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    display: none; /* Hide navigation menu by default */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+    max-height: 0; /* Initially hide the menu */
+  }
+
+  nav ul.show {
+    display: flex; /* Show navigation menu when toggled */
+    max-height: 500px; /* Arbitrary large value to accommodate menu items */
+  }
+
+  nav ul li {
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Show the menu toggle button on smaller screens */
+  .menu-toggle {
+    display: block;
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+
+  /* Adjust footer padding and text alignment */
+  footer p {
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+
+/* Extra Responsive Styles for Very Small Screens (e.g., Smartphones) */
+@media screen and (max-width: 480px) {
+  /* Further reduce font sizes for better fit */
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .profile-info h2 {
+    font-size: 24px;
+  }
+
+  .profile-info p {
+    font-size: 14px;
+  }
+
+  /* Stack skills grid into single column */
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  /* Make buttons full-width for easier tapping */
+  .custom-button {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+  }
+
+  /* Adjust contact container padding */
+  .contact-container {
+    padding: 0 20px;
+  }
+
+  /* Ensure footer content is properly spaced */
+  footer {
+    padding: 20px 10px;
+  }
+}
