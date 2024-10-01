@@ -183,7 +183,6 @@
   footer p {
     font-size: 14px;
     text-align: center;
-    padding: 10px 0;
   }
   
   /* Make buttons full-width for easier tapping */
@@ -228,11 +227,4 @@
   .contact-container {
     padding: 0 20px;
   }
-
-  /* Ensure footer content is properly spaced */
-  footer {
-    padding: 20px 10px;
-  }
 }
-
-
