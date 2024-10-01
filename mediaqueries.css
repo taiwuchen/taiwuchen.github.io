@@ -5,19 +5,16 @@
   box-sizing: border-box;
 }
 
-/* Prevent horizontal scrolling */
-html,
-body {
-  overflow-x: hidden;
-}
-
 /* Hide the menu toggle button by default on larger screens */
 .menu-toggle {
   display: none;
 }
 
+
+
 /* Responsive Styles for Tablets and Mobile Devices */
 @media screen and (max-width: 768px) {
+
   /* Adjust body styles */
   body {
     font-family: Arial, sans-serif;
@@ -25,7 +22,6 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     opacity: 0;
-    overflow-x: hidden;
     transition: opacity 0.5s ease-in-out;
   }
 
@@ -127,10 +123,17 @@ body {
     padding: 20px;
     transition: padding 0.3s ease;
   }
-
+  
+  .header-scrolled .logo {
+    font-size: 26px;
+  }
+  .header-scrolled .header-container {
+    padding: 5px 30px;
+  }
+  
   .logo {
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 27px;
   }
 
   /* Navigation adjustments */
@@ -152,6 +155,7 @@ body {
     transition: max-height 0.3s ease-in-out;
     overflow: hidden;
     max-height: 0; /* Initially hide the menu */
+    border-radius: 10%;
   }
 
   nav ul.show {
@@ -182,6 +186,9 @@ body {
     padding: 10px 0;
   }
 }
+
+
+
 
 /* Extra Responsive Styles for Very Small Screens (e.g., Smartphones) */
 @media screen and (max-width: 480px) {
@@ -225,3 +232,5 @@ body {
     padding: 20px 10px;
   }
 }
+
+
