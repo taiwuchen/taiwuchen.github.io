@@ -11,10 +11,9 @@
 }
 
 
-
 /* Responsive Styles for Tablets and Mobile Devices */
 @media screen and (max-width: 768px) {
-
+   
   /* Adjust body styles */
   body {
     font-family: Arial, sans-serif;
@@ -118,6 +117,7 @@
   }
 
   .header-container {
+    width: auto;
     flex-direction: column;
     align-items: center;
     padding: 20px;
@@ -192,6 +192,7 @@
 
 /* Extra Responsive Styles for Very Small Screens (e.g., Smartphones) */
 @media screen and (max-width: 480px) {
+   
   /* Further reduce font sizes for better fit */
   .section-title {
     font-size: 1.8rem;
