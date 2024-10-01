@@ -125,6 +125,7 @@ section {
     justify-content: center;
     max-width: 100vw;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .section-content {
@@ -433,7 +434,6 @@ p {
 .projects-card {
     background-color: #fff;
     border-radius: 30px;
-    overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     width: 350px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
