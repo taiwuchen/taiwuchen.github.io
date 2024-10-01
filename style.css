@@ -8,11 +8,6 @@ body {
     transition: opacity 0.5s ease-in-out;
 }
 
-header, footer, section {
-    max-width: 100vw;
-    overflow-x: hidden;
-}
-
 
 body.loaded {
     opacity: 1;
@@ -128,6 +123,8 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 .section-content {
