@@ -108,6 +108,10 @@
   .skills-container {
     padding: 0 20px;
   }
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
 
   /* Header styles for smaller screens */
   header {
@@ -217,9 +221,8 @@
     font-size: 14px;
   }
 
-  /* Stack skills grid into single column */
   .skills-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
 
