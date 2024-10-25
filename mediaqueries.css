@@ -159,7 +159,8 @@
     transition: max-height 0.3s ease-in-out;
     overflow: hidden;
     max-height: 0; /* Initially hide the menu */
-    border-radius: 10%;
+    border: 1px solid #000;
+    border-radius: 20%;
   }
 
   nav ul.show {
