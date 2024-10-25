@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const navUl = document.querySelector('nav ul');
+    const navLinks = document.querySelectorAll('.nav-link');
     
     menuToggle.addEventListener('click', function() {
         navUl.classList.toggle('show');
@@ -66,7 +67,16 @@ document.addEventListener('DOMContentLoaded', function() {
             navUl.classList.remove('show');
         }
     });
+    
+    // Close menu when a link is clicked
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            navUl.classList.remove('show');
+        });
+    });
 });
+
+
 
 
 document.addEventListener('DOMContentLoaded', (event) => {
